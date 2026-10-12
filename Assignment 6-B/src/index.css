@@ -1,0 +1,10 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; background: #f2f5fb; color: #20263a; font-family: Arial, sans-serif; }
+.card { width: min(100%, 600px); background: white; padding: 32px; border-radius: 18px; box-shadow: 0 8px 30px #1d2b4d12; }
+.tag { color: #565fd0; font-size: 12px; font-weight: bold; letter-spacing: 2px; }
+h1 { margin-top: 8px; font-size: 30px; }
+label { display: block; margin: 18px 0 8px; font-weight: bold; }
+input { width: 100%; padding: 12px; border: 1px solid #ccd2e0; border-radius: 9px; font-size: 16px; margin-bottom: 12px; }
+button, .button-link { display: inline-block; border: 0; border-radius: 9px; padding: 12px 18px; background: #565fd0; color: white; font-size: 15px; font-weight: bold; cursor: pointer; text-decoration: none; margin-top: 12px; }
+.detail { background: #f4f5ff; border-radius: 10px; padding: 14px; margin: 12px 0; overflow-wrap: anywhere; }
+.detail p { margin-bottom: 0; }

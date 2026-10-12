@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+        <style>
+        body
+        {
+            text-align: center;
+        }
+        </style>
+            
+    <input type="password" id="password" placeholder="Enter Password">
+    <br></br>
+    <button onclick="checkPassword()">Submit</button>
+    <p id="message"></p>
+
+    <script>
+        function checkPassword() 
+        {
+            let password = document.getElementById("password").value;
+            let message = document.getElementById("message");
+
+            if (password.length < 8) 
+            {
+                message.innerHTML = "Enter at least 8 characters";
+            }
+            else if (!/[A-Z]/.test(password)) 
+            {
+                message.innerHTML = "Enter at least 1 uppercase letter";
+            }
+            else if (!/[a-z]/.test(password)) 
+            {
+                message.innerHTML = "Enter at least 1 lowercase letter";
+            }
+            else if (!/[0-9]/.test(password)) 
+            {
+                message.innerHTML = "Enter at least 1 number";
+            }
+            else if (!/[!@#$%^&*]/.test(password)) 
+            {
+                message.innerHTML = "Enter at least 1 special character";
+            }
+            else 
+            {
+                message.innerHTML = "Password is valid ✅";
+            }
+        }
+    </script>
+
+</body>
+</head>
+</html>    

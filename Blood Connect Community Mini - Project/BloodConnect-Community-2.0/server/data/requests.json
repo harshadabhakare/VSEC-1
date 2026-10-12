@@ -1,0 +1,35 @@
+[
+  {
+    "id": "R1001",
+    "patient": "Emergency Case #1024",
+    "bloodGroup": "O+",
+    "units": 2,
+    "hospital": "City Care Hospital",
+    "city": "Nashik",
+    "urgency": "Critical",
+    "status": "Open",
+    "contact": "0000000000"
+  },
+  {
+    "id": "R1002",
+    "patient": "Surgery Support",
+    "bloodGroup": "A+",
+    "units": 3,
+    "hospital": "LifeLine Hospital",
+    "city": "Nashik",
+    "urgency": "Urgent",
+    "status": "Open",
+    "contact": "0000000000"
+  },
+  {
+    "id": "R1003",
+    "patient": "Accident Case #778",
+    "bloodGroup": "B+",
+    "units": 1,
+    "hospital": "Civil Hospital",
+    "city": "Nashik",
+    "urgency": "Critical",
+    "status": "Fulfilled",
+    "contact": "0000000000"
+  }
+]

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks</title>
+    <style>
+        body
+        {
+            font-family: Arial;
+            text-align: center;
+        }
+        table
+        {
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        th,td
+        {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h2>Student Marks</h2>
+
+<label>ID:</label>
+<br><br>
+<input type="text" id="id" placeholder="Enter your ID">
+<br><br>
+
+<label>Name:</label>
+<br><br>
+<input type="text" id="name" placeholder="Enter your Name">
+<br><br>
+
+<label>Physics Marks:</label>
+<br><br>
+<input type="number" id="physics" placeholder="Physics Marks">
+<br><br>
+
+<label>Chemistry Marks:</label>
+<br><br>
+<input type="number" id="chemistry" placeholder="Chemistry Marks">
+<br><br>
+
+<label>English Marks:</label>
+<br><br>
+<input type="number" id="english" placeholder="English Marks">
+<br><br>
+
+<button onclick="calculateMarks()">Submit</button>
+
+<table id="marksTable">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Total</th>
+        <th>Percentage</th>
+    </tr>
+</table>
+
+<br>
+
+<button onclick="showTopper()">Find Topper</button>
+
+<h3 id="topper"></h3>
+
+<script>
+
+let highestPercentage = 0;
+let topperName = "";
+
+function calculateMarks()
+{
+    let id = document.getElementById("id").value;
+    let name = document.getElementById("name").value;
+
+    let physics = Number(document.getElementById("physics").value);
+    let chemistry = Number(document.getElementById("chemistry").value);
+    let english = Number(document.getElementById("english").value);
+
+    let total = physics + chemistry + english;
+    let percentage = (total / 300) * 100;
+
+    if (percentage > highestPercentage)
+    {
+        highestPercentage = percentage;
+        topperName = name;
+    }
+
+    let table = document.getElementById("marksTable");
+    let row = table.insertRow();
+
+    row.insertCell(0).innerHTML = id;
+    row.insertCell(1).innerHTML = name;
+    row.insertCell(2).innerHTML = total;
+    row.insertCell(3).innerHTML = percentage.toFixed(2) + "%";
+
+  
+    document.getElementById("id").value = "";
+    document.getElementById("name").value = "";
+    document.getElementById("physics").value = "";
+    document.getElementById("chemistry").value = "";
+    document.getElementById("english").value = "";
+}
+
+function showTopper()
+{
+    if (topperName == "")
+    {
+        document.getElementById("topper").innerHTML = "No student data available.";
+    }
+    else
+    {
+        document.getElementById("topper").innerHTML =
+            "Topper: " + topperName +
+            "<br>Percentage: " + highestPercentage.toFixed(2) + "%";
+    }
+}
+
+</script>
+
+</body>
+</html>

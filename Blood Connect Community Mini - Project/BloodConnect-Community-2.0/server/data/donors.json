@@ -1,0 +1,82 @@
+[
+  {
+    "id": "D1001",
+    "name": "Aarav Patil",
+    "age": 23,
+    "bloodGroup": "O+",
+    "city": "Nashik",
+    "phone": "9876543210",
+    "available": true,
+    "lastDonation": "2026-07-12"
+  },
+  {
+    "id": "D1002",
+    "name": "Sneha Kulkarni",
+    "age": 21,
+    "bloodGroup": "A+",
+    "city": "Nashik",
+    "phone": "9876543211",
+    "available": true,
+    "lastDonation": "2026-06-18"
+  },
+  {
+    "id": "D1003",
+    "name": "Rohan Shinde",
+    "age": 25,
+    "bloodGroup": "B+",
+    "city": "Nashik",
+    "phone": "9876543212",
+    "available": true,
+    "lastDonation": "2026-08-02"
+  },
+  {
+    "id": "D1004",
+    "name": "Priya More",
+    "age": 24,
+    "bloodGroup": "O-",
+    "city": "Nashik",
+    "phone": "9876543213",
+    "available": true,
+    "lastDonation": "2026-05-21"
+  },
+  {
+    "id": "D1005",
+    "name": "Aditya Jadhav",
+    "age": 27,
+    "bloodGroup": "AB+",
+    "city": "Nashik",
+    "phone": "9876543214",
+    "available": false,
+    "lastDonation": "2026-04-11"
+  },
+  {
+    "id": "D1006",
+    "name": "Neha Pawar",
+    "age": 22,
+    "bloodGroup": "B-",
+    "city": "Nashik",
+    "phone": "9876543215",
+    "available": true,
+    "lastDonation": "2026-08-19"
+  },
+  {
+    "id": "D1007",
+    "name": "Siddhant Deshmukh",
+    "age": 26,
+    "bloodGroup": "A-",
+    "city": "Pune",
+    "phone": "9876543216",
+    "available": true,
+    "lastDonation": "2026-07-30"
+  },
+  {
+    "id": "D1008",
+    "name": "Isha Joshi",
+    "age": 20,
+    "bloodGroup": "O+",
+    "city": "Nashik",
+    "phone": "9876543217",
+    "available": true,
+    "lastDonation": "2026-09-01"
+  }
+]

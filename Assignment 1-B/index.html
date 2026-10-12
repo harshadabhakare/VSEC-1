@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Animation</title>
+
+    <style>
+
+        body 
+        {
+            margin: 0;
+            height: 100vh;
+            text-align: center;
+            background: #f5f5f5;
+            overflow: hidden;
+        }
+
+        .container 
+        {
+            position: relative;
+            width: 600px;
+            height: 500px;
+            margin: 50px auto;
+        }
+
+        .welcome 
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .box 
+        {
+            width: 130px;
+            height: 130px;
+            position: absolute;
+            border-radius: 10px;
+            transition: 2s;
+        }
+
+        .box1 
+        {
+            background: red;
+            left: 170px;
+            top: 100px;
+        }
+
+        .box2 
+        {
+            background: blue;
+            left: 300px;
+            top: 100px;
+        }
+
+        .box3 
+        {
+            background: green;
+            left: 170px;
+            top: 230px;
+        }
+
+        .box4 
+        {
+            background: orange;
+            left: 300px;
+            top: 230px;
+        }
+
+        .move .box1 
+        {
+            transform: translate(-80px, -30px) rotate(-45deg);
+        }
+
+        .move .box2 {
+            transform: translate(80px, -30px) rotate(45deg);
+        }
+
+        .move .box3 {
+            transform: translate(-80px, 30px) rotate(-45deg);
+        }
+
+        .move .box4 {
+            transform: translate(80px, 30px) rotate(45deg);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container" onclick="moveBoxes()">
+
+        <div class="welcome">WELCOME</div>
+
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+
+    </div>
+
+    <script>
+
+        function moveBoxes() {
+            document.querySelector(".container").classList.toggle("move");
+        }
+
+    </script>
+
+</body>
+</html>
